@@ -116,11 +116,11 @@ namespace CityInfo.API.Controllers
         [HttpDelete("{pointOfInterestId}")]
         public ActionResult DeletePointOfInterest(int cityId, int pointOfInterestId)
         {
-            CityDTO city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            CityDTO? city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null) return NotFound();
 
-            PointOfInterestDTO pointOfInterestFromStore = city.PointsOfInterest.FirstOrDefault(p => p.Id == pointOfInterestId);
+            PointOfInterestDTO? pointOfInterestFromStore = city.PointsOfInterest.FirstOrDefault(p => p.Id == pointOfInterestId);
 
             if (pointOfInterestFromStore == null) return NotFound();
 
