@@ -5,7 +5,7 @@ namespace CityInfo.API
     public class CitiesDataStore
     {
         public List<CityDTO> Cities { get; set; }
-        public static CitiesDataStore Current { get; } = new CitiesDataStore();
+       // public static CitiesDataStore Current { get; } = new CitiesDataStore(); virou uma instancia singleton no program.cs
 
         public CitiesDataStore()
         {
