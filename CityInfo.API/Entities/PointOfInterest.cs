@@ -14,6 +14,8 @@ namespace CityInfo.API.Models
 
         public int CityId { get; set; }
 
+        public string? Description { get; set; }
+
         public PointOfInterest (string name)
         {
             Name = name;
