@@ -1,4 +1,4 @@
-﻿using CityInfo.API.Models;
+﻿using CityInfo.API.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CityInfo.API.DbContexts
